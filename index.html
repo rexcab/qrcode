@@ -74,6 +74,7 @@
                 if (cameraIndex >= 0 && cameraIndex < cameras.length) {
                     scanner.start(cameras[cameraIndex]);
                     selectedCameraIndex = cameraIndex;
+                     $("#preview").css("transform","scaleX(1)")
                 } else {
                     console.error('Invalid camera index.');
                 }
