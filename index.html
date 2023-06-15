@@ -69,7 +69,7 @@
             }
 
             scanner = new Instascan.Scanner({ video: document.getElementById('preview') });
-            if(cameraIndex>{
+            if(cameraIndex>0){
                 $("#preview").css("transform","scaleX(1)")
             }
             scanner.addListener('scan', function (content) {
