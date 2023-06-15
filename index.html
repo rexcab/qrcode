@@ -69,7 +69,9 @@
             }
 
             scanner = new Instascan.Scanner({ video: document.getElementById('preview') });
-            $("#preview").css("transform","scaleX(1)")
+            if(cameraIndex>{
+                $("#preview").css("transform","scaleX(1)")
+            }
             scanner.addListener('scan', function (content) {
                 // Display the scanned QR code content
                 alert("Scanned QR code: " + content);
