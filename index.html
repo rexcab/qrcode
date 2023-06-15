@@ -9,6 +9,10 @@
 
 <body>
     <style>
+    *{
+        margin:0;
+        padding:0;
+    }
     #qrscanner{
         width:50%;
         height:auto;
@@ -20,8 +24,10 @@
     }
 </style>
     <h1>QR Code Scanner</h1>
-    <div id="qrscanner">
-        <video id="preview" style="transform: scaleX(1);"></video>
+    <div id="container">
+        <div id="qrscanner">
+            <video id="preview" style="transform: scaleX(1);"></video>
+        </div>
     </div>
     <br>
     <div>
